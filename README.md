@@ -34,12 +34,12 @@ python3 logsentry.py access.log --404-thresh 20 --5xx-thresh 5 --json report.jso
 
 ## ⚙️ Configuration / Optional Modifications
 
-Port range: --ports
+404 error threshold: --404-thresh N
 
-Number of threads: --workers N
+5xx error threshold: --5xx-thresh N
 
-Connection timeout: --timeout 0.5
+JSON report: --json report.json
 
-JSON report: --json out.json
+CSV of top URLs: --csv-paths top_paths.csv
 
-To unlock full functionality on remote hosts, enable --force and configure firewall or permissions on the target machine if necessary.
+To unlock full analysis capabilities, modify thresholds, add custom filtering rules, or integrate graph generation for IP activity.
