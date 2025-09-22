@@ -30,3 +30,16 @@ python3 logsentry.py access.log
 # Adjust thresholds and save report
 python3 logsentry.py access.log --404-thresh 20 --5xx-thresh 5 --json report.json --csv-paths top_paths.csv
 
+---
+
+## ⚙️ Configuration / Optional Modifications
+
+Port range: --ports
+
+Number of threads: --workers N
+
+Connection timeout: --timeout 0.5
+
+JSON report: --json out.json
+
+To unlock full functionality on remote hosts, enable --force and configure firewall or permissions on the target machine if necessary.
